@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #fff9f7;
+    color: #4a3038;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #ffffff;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0d9df;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8f3f5b;
+    line-height: 1.2;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    color: #8a6a74;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5c3b45;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #b85c78;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(
+        120deg,
+        #f9dce5,
+        #fff9f7
+    );
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    color: #6d3045;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #b85c78;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #8f3f5b;
+}
+
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    text-align: center;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 25px;
+}
+
+.apresentacao h2 {
+    font-size: 36px;
+    color: #6d3045;
+    margin-bottom: 20px;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* CARDS */
+
+.destaques {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 8% 100px;
+}
+
+.card {
+    background-color: white;
+    padding: 35px;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(100, 50, 70, 0.08);
+}
+
+.card span {
+    font-size: 40px;
+}
+
+.card h3 {
+    margin: 20px 0 15px;
+    color: #8f3f5b;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #6d3045;
+    color: white;
+}
