@@ -164,3 +164,120 @@ footer {
     background-color: #6d3045;
     color: white;
 }
+
+/* PÁGINA ENCONTRE SUA LEITURA */
+
+.pagina-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 70px auto 50px;
+    padding: 0 25px;
+}
+
+.pagina-intro h1 {
+    font-size: 44px;
+    color: #6d3045;
+    margin-bottom: 20px;
+}
+
+.pagina-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* PLATAFORMAS */
+
+.plataformas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 8% 70px;
+}
+
+.plataforma-card {
+    background-color: white;
+    width: 30%;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(100, 50, 70, 0.08);
+}
+
+.plataforma-card .icone {
+    font-size: 45px;
+}
+
+.plataforma-card h2 {
+    color: #8f3f5b;
+    font-size: 23px;
+    margin: 20px 0 15px;
+}
+
+.plataforma-card p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* BOTÕES DOS CARDS */
+
+.plataforma-card .botao {
+    padding: 11px 22px;
+    font-size: 14px;
+}
+
+
+/* DICA */
+
+.dica-leitura {
+    max-width: 800px;
+    margin: 20px auto 90px;
+    padding: 40px;
+    background-color: #f9dce5;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.dica-leitura h2 {
+    color: #6d3045;
+    margin-bottom: 20px;
+}
+
+.dica-leitura p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* ENCERRAMENTO DA PÁGINA ENCONTRE SUA LEITURA */
+
+.comeco {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9e5eb;
+    border-radius: 20px;
+}
+
+.comeco h2 {
+    color: #6d3045;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.comeco p {
+    color: #4a3038;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.comeco .frase-final {
+    color: #8f3f5b;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+
