@@ -280,4 +280,94 @@ footer {
     margin-bottom: 0;
 }
 
+/* ============================= */
+/* PÁGINA DE INDICAÇÕES */
+/* ============================= */
+
+.pagina-intro {
+    max-width: 850px;
+    margin: 70px auto 50px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.pagina-intro h1 {
+    font-size: 42px;
+    color: #6d3045;
+    margin-bottom: 25px;
+}
+
+.pagina-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* CATEGORIAS */
+
+.categoria-livros {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.categoria-livros h2 {
+    color: #8f3f5b;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* ÁREA DOS LIVROS */
+
+.livros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* CARD DO LIVRO */
+
+.livro-card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(100, 50, 70, 0.08);
+    text-align: center;
+}
+
+.livro-card h3 {
+    color: #6d3045;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.livro-card .autor {
+    color: #8f3f5b;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.livro-card p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.livro-card .faixa-etaria {
+    color: #8f3f5b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* FINAL DA PÁGINA */
+
+.categoria-livros:last-of-type {
+    margin-bottom: 100px;
+}
 
