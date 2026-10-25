@@ -286,7 +286,7 @@ footer {
 
 .pagina-intro {
     max-width: 850px;
-    margin: 70px auto 50px;
+    margin: 70px auto 55px;
     padding: 0 25px;
     text-align: center;
 }
@@ -307,15 +307,15 @@ footer {
 /* CATEGORIAS */
 
 .categoria-livros {
-    max-width: 1100px;
-    margin: 70px auto;
+    max-width: 1150px;
+    margin: 75px auto;
     padding: 0 30px;
 }
 
 .categoria-livros h2 {
     color: #8f3f5b;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
@@ -324,8 +324,8 @@ footer {
 
 .livros {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     gap: 25px;
 }
 
@@ -334,18 +334,40 @@ footer {
 
 .livro-card {
     background-color: #ffffff;
-    width: 300px;
-    padding: 28px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 330px;
+    padding: 30px 27px;
     border-radius: 18px;
     box-shadow: 0 5px 20px rgba(100, 50, 70, 0.08);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.livro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 50, 70, 0.13);
+}
+
+
+/* TÍTULO DO LIVRO */
 
 .livro-card h3 {
     color: #6d3045;
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 1.35;
     margin-bottom: 10px;
 }
+
+
+/* AUTOR */
 
 .livro-card .autor {
     color: #8f3f5b;
@@ -353,21 +375,311 @@ footer {
     margin-bottom: 18px;
 }
 
+
+/* DESCRIÇÃO */
+
 .livro-card p {
     line-height: 1.6;
     font-size: 16px;
 }
 
+
+/* CLASSIFICAÇÃO ETÁRIA */
+
 .livro-card .faixa-etaria {
+    display: inline-block;
+    align-self: center;
+
     color: #8f3f5b;
+    background-color: #f9e5eb;
+
     font-weight: bold;
+    font-size: 14px;
+
+    padding: 5px 12px;
+    border-radius: 20px;
+
     margin-bottom: 15px;
 }
 
 
-/* FINAL DA PÁGINA */
+/* OPINIÃO PESSOAL */
+
+.livro-card .opiniao {
+    margin-top: auto;
+    padding-top: 18px;
+
+    color: #8f3f5b;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+
+/* ÚLTIMA CATEGORIA */
 
 .categoria-livros:last-of-type {
     margin-bottom: 100px;
 }
 
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+/* TABLETS */
+
+@media (max-width: 950px) {
+
+    .livros {
+        flex-wrap: wrap;
+    }
+
+    .livro-card {
+        max-width: 320px;
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+
+    .categoria-livros {
+        margin: 55px auto;
+        padding: 0 20px;
+    }
+
+    .categoria-livros h2 {
+        font-size: 26px;
+    }
+
+    .livros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .livro-card {
+        max-width: 400px;
+        min-height: auto;
+    }
+
+    .pagina-intro h1 {
+        font-size: 34px;
+    }
+
+    .pagina-intro p {
+        font-size: 16px;
+    }
+
+}
+/* ============================= */
+/* PÁGINA SOBRE */
+/* ============================= */
+
+.sobre-secao {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.sobre-secao h2 {
+    text-align: center;
+    color: #8f3f5b;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+/* CARDS DOS OBJETIVOS */
+
+.objetivos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.objetivo-card {
+    background-color: #ffffff;
+    width: 240px;
+    min-height: 260px;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(100, 50, 70, 0.08);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.objetivo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 50, 70, 0.13);
+}
+
+.objetivo-card span {
+    font-size: 38px;
+}
+
+.objetivo-card h3 {
+    color: #6d3045;
+    font-size: 20px;
+    margin: 18px 0 12px;
+}
+
+.objetivo-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* TECNOLOGIA E LEITURA */
+
+.tecnologia-leitura {
+    max-width: 850px;
+    padding: 40px;
+    background-color: #f9e5eb;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tecnologia-leitura h2 {
+    margin-bottom: 25px;
+}
+
+.tecnologia-leitura p {
+    color: #4a3038;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.tecnologia-leitura p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* FRASE FINAL */
+
+.frase-sobre {
+    max-width: 900px;
+    margin: 80px auto 100px;
+    padding: 45px 50px;
+
+    background-color: #f9dce5;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.frase-sobre p {
+    color: #6d3045;
+    font-size: 21px;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .sobre-secao {
+        margin: 55px auto;
+        padding: 0 20px;
+    }
+
+    .sobre-secao h2 {
+        font-size: 26px;
+    }
+
+    .objetivo-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .tecnologia-leitura {
+        padding: 30px 25px;
+    }
+
+    .frase-sobre {
+        margin: 60px 20px 80px;
+        padding: 35px 25px;
+    }
+
+    .frase-sobre p {
+        font-size: 18px;
+    }
+
+}
+
+/* CAPA DA PÁGINA INICIAL */
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 8%;
+    background: linear-gradient(120deg, #f9dce5, #fff9f7);
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    color: #6d3045;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.hero-imagem {
+    flex: 1;
+    max-width: 400px;
+}
+
+.hero-imagem img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(100, 50, 70, 0.15);
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 7%;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-imagem {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-imagem img {
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+    }
+}
