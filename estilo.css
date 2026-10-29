@@ -38,6 +38,12 @@ header {
     letter-spacing: 0.5px;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #8f3f5b;
+}
+
+
 nav {
     display: flex;
     gap: 30px;
@@ -153,6 +159,11 @@ nav a:hover {
 
 .card p {
     line-height: 1.6;
+}
+
+.card a {
+    text-decoration: none;
+    color: #8f3f5b;
 }
 
 
@@ -660,6 +671,7 @@ footer {
 }
 
 /* ADAPTAÇÃO PARA CELULARES */
+
 @media (max-width: 800px) {
     .hero {
         flex-direction: column;
